@@ -1,0 +1,15 @@
+# Environment secrets — NEVER commit
+.env
+.env.*
+
+# Hardhat build output
+artifacts/
+cache/
+typechain-types/
+
+# Dependencies
+node_modules/
+
+# Coverage
+coverage/
+coverage.json

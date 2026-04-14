@@ -1,0 +1,16 @@
+[profile.default]
+src = "contracts"
+out = "out-foundry"
+test = "test"
+libs = ["lib", "node_modules"]
+solc = "0.8.20"
+evm_version = "shanghai"
+optimizer = true
+optimizer_runs = 100
+gas_limit = 30000000
+
+remappings = [
+    "@prb/math/=node_modules/@prb/math/",
+    "@openzeppelin/=node_modules/@openzeppelin/",
+    "forge-std/=lib/forge-std/src/",
+]
