@@ -1,29 +1,27 @@
-# ⚙️ MeritX Core
+# ⚙️ MeritX: The Settlement Layer for Autonomous AI Economies
 
-> **"Code is Law. Death to Pre-mines. Power to the Players."** This repository contains the immutable core smart contracts for the **MeritX Protocol**, deployed on the Base Network. 
+**Code is Law. Death to Pre-mines. Power to the Players.**
 
-MeritX is a decentralized settlement protocol engineered specifically for the AI economy, allowing developers to permissionlessly launch Initial Agent Offerings (IAOs).
+Internet infrastructure has witnessed three epochal shifts in consensus:
+- **Bitcoin** (Decentralized Money): Proof-of-Work (PoW)
+- **Ethereum** (Decentralized Apps): Proof-of-Stake (PoS)
+- **MeritX** (Autonomous AI Economies): Proof-of-Premium (PoP)
 
-## 🏗️ Dual-Engine Architecture
+MeritX is an immutable, open-source protocol on Base L2 engineered to solve the "VC-Dump" and "Bot-Sniping" crises. We eliminate centralized gatekeepers through three core pillars:
 
-MeritX abandons traditional VC-dump models in favor of a mathematically rigorous dual-engine system:
+## 1. Permissionless Issuance (Initial Agent Offerings)
+No gatekeepers. No VC approvals. Any developer can permissionlessly launch an Initial Agent Offering (IAO) to tokenize their AI Agent and fund its compute costs. We return the launch initiative entirely to the builders and the free market.
 
-### 1. The Human Defense Line: Proof-of-Gas (PoG)
-To prevent automated bots and whales from monopolizing the genesis supply, PoG acts as an impenetrable defense. A user's maximum investment cap is strictly evaluated based on their historical EVM cross-chain Gas consumption. No whales. No VIPs. Your real on-chain scars are your only ticket in.
+## 2. The Defense Line: Proof-of-Gas (PoG)
+To prevent automated bots and whales from monopolizing the genesis supply, MeritX deploys mpenetrable defense.
+- **Earned, Not Bought:** Your allocation is not granted by fiat; it is evaluated based on your historical EVM cross-chain Gas burned.
+- **Hard Capped:** Absolutely locked at **0.15 ETH** per wallet. Your real "on-chain scars" are your only ticket in.
 
-### 2. The Compute Subsidy: Price-of-Proof (PoP) Engine
-Tokens are not pre-mined; they are dynamically forged by an immutable poweon based on market demand. When an AI Agent demonstrates real utility and API demand drives the price up, the protocol allows the supply to expand to subsidize developer compute costs.
+## 3. The Economic Engine: Proof-of-Premium (PoP)
+AI without real utility will be annihilated by the free market. Tokens are NOT pre-mined. They are dynamically forged by an immutable power function to provide compute subsidies to developers.
+- **Dynamic Inflation:** When market demand drives the price up, supply expands based on the Uniswap V3 TWAP:
+  $$S(P) = 40,950,000 \times \left( \frac{P_{TWAP}}{P_0} \right)^{0.12}$$
+- **Retail Protection:** Inflation is strictly capped at **3.5% per 24 hours**.
 
-$$S(P) = 40{,}950{,}000 \times \left( \frac{P_{TWAP}}{P_0} \right)^{0.12}$$
-
-*Inflation is hard-capped at 350 BPS (3.5%) per 24 hours to protect retail sponsors.*
-
-## 📂 Repository Structure
-
-- `blockchain/`: Contains the Solidity source code, interfaces, and deployment scripts for the MeritX IAO logic.
-- *Note: The frontend client and API gateways remain closed-source to protect the ecosystem's user experience.*
-
-## 🔒 Security & Audits
-These contracts are engineered with strict security standards, including reentrancy guards, time-locks, and Protocol-Owned Liquidity (POL) mechanisms. 
-
+---
 *All active contracts are fully verified on Basescan.*
