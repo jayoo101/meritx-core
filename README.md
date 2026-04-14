@@ -16,7 +16,7 @@ Tokens are not pre-mined; they are dynamically forged by an immutable poweon bas
 
 $$S(P) = 40{,}950{,}000 \times \left( \frac{P_{TWAP}}{P_0} \right)^{0.12}$$
 
-*Inflation is hard-capped at 350 BPS (3.5%) per day to protect retail sponsors.*
+*Inflation is hard-capped at 350 BPS (3.5%) per 24 hours to protect retail sponsors.*
 
 ## 📂 Repository Structure
 
